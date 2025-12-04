@@ -1,0 +1,19 @@
+{
+	"name": "@codelab/contract",
+	"version": "0.0.0",
+	"private": true,
+	"license": "MIT",
+	"scripts": {
+		"format": "biome format --write",
+		"lint": "biome lint",
+		"check": "biome check"
+	},
+	"dependencies": {
+		"zod": "4.1.13",
+		"@codelab/typescript-config": "workspace:*",
+		"@orpc/contract": "1.12.2"
+	},
+	"exports": {
+		"./planets": "./src/planets.ts"
+	}
+}

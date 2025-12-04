@@ -1,0 +1,14 @@
+{
+	"name": "@codelab/typescript-config",
+	"version": "0.0.0",
+	"private": true,
+	"license": "MIT",
+	"scripts": {
+		"format": "biome format --write",
+		"lint": "biome lint",
+		"check": "biome check"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
+}
