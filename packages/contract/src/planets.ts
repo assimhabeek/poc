@@ -2,10 +2,12 @@ import { oc } from "@orpc/contract";
 import * as z from "zod";
 
 export const PlanetSchema = z.object({
-	id: z.number().int().min(1),
+	id: z.coerce.number().int().min(1),
 	name: z.string(),
 	description: z.string().optional(),
 });
+
+export type Planet = z.infer<typeof PlanetSchema>;
 
 export const listPlanetContract = oc
 	.route({
@@ -14,8 +16,8 @@ export const listPlanetContract = oc
 	})
 	.input(
 		z.object({
-			limit: z.number().int().min(1).max(100).optional(),
-			cursor: z.number().int().min(0).default(0),
+			limit: z.coerce.number().int().min(1).max(100).optional(),
+			cursor: z.coerce.number().int().min(0).default(0),
 		}),
 	)
 	.output(z.array(PlanetSchema));
@@ -23,7 +25,7 @@ export const listPlanetContract = oc
 export const findPlanetContract = oc
 	.route({
 		method: "GET",
-		path: "/planets/{id}", // Path is required
+		path: "/planets/:id",
 	})
 	.input(PlanetSchema.pick({ id: true }))
 	.output(z.optional(PlanetSchema));
