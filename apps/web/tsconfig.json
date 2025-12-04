@@ -1,0 +1,4 @@
+{
+	"extends": "@codelab/typescript-config/react.json",
+	"include": ["**/*.ts", "**/*.tsx"]
+}
