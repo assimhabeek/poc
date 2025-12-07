@@ -10,6 +10,8 @@
 	},
 	"dependencies": {
 		"@codelab/contract": "workspace:*",
+		"@codelab/domain": "workspace:*",
+		"@codelab/database": "workspace:*",
 		"@orpc/openapi": "^1.12.2",
 		"@orpc/server": "^1.12.2",
 		"@orpc/zod": "^1.12.2",

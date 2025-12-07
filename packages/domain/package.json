@@ -1,21 +1,19 @@
 {
-	"name": "@codelab/contract",
-	"version": "0.0.0",
+	"name": "@codelab/domain",
 	"private": true,
-	"license": "MIT",
 	"scripts": {
 		"format": "biome format --write",
 		"lint": "biome lint",
 		"check": "biome check"
 	},
 	"dependencies": {
-		"@codelab/domain": "workspace:*",
+		"@codelab/database": "workspace:*",
 		"@codelab/typescript-config": "workspace:*",
-		"@orpc/contract": "1.12.2",
-		"zod": "4.1.13"
+		"drizzle-zod": "^0.8.3",
+		"zod": "^4.1.13"
 	},
 	"exports": {
-		"./planets": "./src/planets.ts"
+		"./planet": "./src/planet.ts"
 	},
 	"devDependencies": {
 		"@types/pg": "^8.15.6"

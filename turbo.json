@@ -6,6 +6,12 @@
 			"cache": false,
 			"persistent": true
 		},
+
+		"db:push": {},
+		"docker:up": {},
+		"docker:down": {},
+		"docker:ps": {},
+
 		"build": {
 			"dependsOn": ["^build"],
 			"inputs": ["$TURBO_DEFAULT$", ".env*"],

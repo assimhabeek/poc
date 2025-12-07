@@ -1,0 +1,14 @@
+version: "3.9"
+
+name: codelab
+services:
+  postgres:
+    image: postgres:18.1
+    container_name: codelab-postgres
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: codelab
+    ports:
+      - "5432:5432"

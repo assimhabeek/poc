@@ -4,8 +4,8 @@
 		"source.organizeImports.biome": "explicit",
 		"source.fixAll.biome": "explicit"
 	},
-	"cSpell.words": [
-		"codelab",
-		"orpc"
-	]
+	"cSpell.words": ["codelab", "orpc"],
+	"[yaml]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }

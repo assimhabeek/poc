@@ -1,13 +1,8 @@
+import { PlanetZodSchema } from "@codelab/domain/planet";
 import { oc } from "@orpc/contract";
 import * as z from "zod";
 
-export const PlanetSchema = z.object({
-	id: z.coerce.number().int().min(1),
-	name: z.string(),
-	description: z.string().optional(),
-});
-
-export type Planet = z.infer<typeof PlanetSchema>;
+const { InsertSchema, SelectSchema } = PlanetZodSchema;
 
 export const listPlanetContract = oc
 	.route({
@@ -16,27 +11,27 @@ export const listPlanetContract = oc
 	})
 	.input(
 		z.object({
-			limit: z.coerce.number().int().min(1).max(100).optional(),
-			cursor: z.coerce.number().int().min(0).default(0),
+			limit: z.coerce.number().int().min(1).max(100).optional().default(10),
+			offset: z.coerce.number().int().min(0).default(10),
 		}),
 	)
-	.output(z.array(PlanetSchema));
+	.output(z.array(SelectSchema));
 
 export const findPlanetContract = oc
 	.route({
 		method: "GET",
 		path: "/planets/:id",
 	})
-	.input(PlanetSchema.pick({ id: true }))
-	.output(z.optional(PlanetSchema));
+	.input(SelectSchema.pick({ id: true }))
+	.output(z.optional(SelectSchema));
 
 export const createPlanetContract = oc
 	.route({
 		method: "POST",
 		path: "/planets", // Path is required
 	})
-	.input(PlanetSchema.omit({ id: true }))
-	.output(PlanetSchema);
+	.input(InsertSchema)
+	.output(z.optional(SelectSchema));
 
 /**
  * populateContractRouterPaths is completely optional,
