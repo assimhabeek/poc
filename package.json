@@ -8,7 +8,9 @@
 		"format": "biome format --write",
 		"lint": "biome lint",
 		"check": "biome check",
-		"db:push": "turbo run @codelab/database#db:push",
+
+		"cli:db:push": "turbo run cli#db:push",
+
 		"docker:up": "turbo run @codelab/database#docker:up",
 		"docker:down": "turbo run @codelab/database#docker:down",
 		"docker:ps": "turbo run @codelab/database#docker:ps"

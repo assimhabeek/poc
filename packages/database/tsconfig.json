@@ -4,7 +4,7 @@
 		"strict": true,
 		"outDir": "dist",
 		"rootDir": "src",
-		"types": ["@types/node"]
+		"types": ["@types/node", "@types/pg"]
 	},
 	"include": ["src"],
 	"exclude": ["node_modules", "dist"]

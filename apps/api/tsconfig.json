@@ -1,7 +1,0 @@
-{
-	"extends": "@codelab/typescript-config/nest.json",
-	"compilerOptions": {
-		"outDir": "./dist",
-		"strict": true
-	}
-}

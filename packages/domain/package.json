@@ -9,11 +9,11 @@
 	"dependencies": {
 		"@codelab/database": "workspace:*",
 		"@codelab/typescript-config": "workspace:*",
-		"drizzle-zod": "^0.8.3",
+		"drizzle-zod": "1.0.0-beta.2-86f844e",
 		"zod": "^4.1.13"
 	},
 	"exports": {
-		"./planet": "./src/planet.ts"
+		"./planet": "./src/planet.domain.ts"
 	},
 	"devDependencies": {
 		"@types/pg": "^8.15.6"

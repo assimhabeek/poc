@@ -11,11 +11,10 @@
 	"dependencies": {
 		"@codelab/domain": "workspace:*",
 		"@codelab/typescript-config": "workspace:*",
-		"@orpc/contract": "1.12.2",
-		"zod": "4.1.13"
+		"@orpc/contract": "1.12.2"
 	},
 	"exports": {
-		"./planets": "./src/planets.ts"
+		"./planet": "./src/planet.contract.ts"
 	},
 	"devDependencies": {
 		"@types/pg": "^8.15.6"

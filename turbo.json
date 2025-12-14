@@ -4,9 +4,9 @@
 	"tasks": {
 		"dev": {
 			"cache": false,
-			"persistent": true
+			"persistent": true,
+			"inputs": ["$TURBO_DEFAULT$", ".env*"]
 		},
-
 		"db:push": {},
 		"docker:up": {},
 		"docker:down": {},

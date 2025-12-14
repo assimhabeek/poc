@@ -12,17 +12,17 @@
 	"license": "ISC",
 	"dependencies": {
 		"@codelab/typescript-config": "workspace:*",
-		"drizzle-orm": "^0.45.0",
+		"drizzle-orm": "1.0.0-beta.2-86f844e",
+		"pg": "^8.16.3",
 		"zod": "^4.1.13"
 	},
 	"devDependencies": {
-		"drizzle-kit": "^0.31.8",
 		"@types/node": "^24.10.1",
 		"@types/pg": "^8.15.6",
 		"tsx": "^4.21.0"
 	},
 	"exports": {
-		"./planets": "./src/planets.ts",
+		"./db": "./src/db.ts",
 		"./schema": "./src/schema.ts"
 	}
 }

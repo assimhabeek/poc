@@ -1,0 +1,26 @@
+{
+	"name": "@codelab/api",
+	"version": "0.0.0",
+	"private": true,
+	"license": "MIT",
+	"scripts": {
+		"format": "biome format --write",
+		"lint": "biome lint",
+		"check": "biome check"
+	},
+	"dependencies": {
+		"@codelab/contract": "workspace:*",
+		"@codelab/database": "workspace:*",
+		"@codelab/domain": "workspace:*",
+		"@codelab/typescript-config": "workspace:*",
+		"@orpc/contract": "1.12.2",
+		"@orpc/server": "^1.7.5",
+		"drizzle-orm": "1.0.0-beta.2-86f844e"
+	},
+	"exports": {
+		"./planet": "./src/planet.api.ts"
+	},
+	"devDependencies": {
+		"@types/pg": "^8.15.6"
+	}
+}

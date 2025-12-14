@@ -1,7 +1,10 @@
-import { pgTable } from "drizzle-orm/pg-core";
+import { defineRelations } from "drizzle-orm";
+import * as p from "drizzle-orm/pg-core";
 
-export const planetTable = pgTable("planets", (t) => ({
-	id: t.integer().generatedAlwaysAsIdentity().primaryKey(),
-	name: t.text().notNull(),
-	description: t.text(),
-}));
+export const planets = p.pgTable("planets", {
+	id: p.integer().generatedAlwaysAsIdentity().primaryKey(),
+	name: p.text().notNull(),
+	description: p.text(),
+});
+
+export const relations = defineRelations({ planets }, () => ({}));

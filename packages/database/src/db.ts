@@ -1,7 +1,13 @@
 import { drizzle } from "drizzle-orm/node-postgres";
-import { planetTable } from "./schema";
+import { relations } from "./schema";
 
-// biome-ignore lint/style/noNonNullAssertion: will be replaced very soon
-export const db = drizzle(process.env.DATABASE_URL!, {
-	schema: { planets: planetTable },
-});
+export type Database = ReturnType<typeof getDB>;
+
+export const getDB = (connectionString: string) =>
+	drizzle({
+		relations,
+		logger: true,
+		connection: {
+			connectionString,
+		},
+	});
