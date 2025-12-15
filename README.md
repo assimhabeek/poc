@@ -8,7 +8,7 @@ pnpm install
 
 3 - Run Postgres database docker container
 ```
-pnpm docker: 
+pnpm docker:up 
 ```
 4 - Create database and tables
 ```
