@@ -25,3 +25,11 @@ pnpm build
 ```
 pnpm dev
 ```
+6 - Navigate to 
+```
+http://localhost:3000/
+```
+7 - To access openapi documents navigate to 
+```
+http://localhost:3000/api
+```
