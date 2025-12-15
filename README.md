@@ -44,3 +44,12 @@ http://localhost:3000/api
 - [Zod](https://zod.dev/)
 - [oRPC](https://orpc.dev/)
 - [Postgres](https://www.postgresql.org/)
+
+## Quick notes 
+- Turborepo simplicity and minimalist design
+- Single source of truth for models which are database schema (zod schema is driven from the database schema)
+- Fetch data from database on ssr, no need for an additional api server
+- Tanstack query covers all use cases of async state managements.
+- Biomejs very simple compared to eslint  
+- Drizzle ORM still not stable, but covers basic cases
+- oRPC procedures are callable for anywhere server/client doesn't matter
