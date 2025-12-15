@@ -4,32 +4,31 @@
 ```
 pnpm install
 ``` 
+2 - Create `.env` file in `apps/web` following `apps/web/.env.example` 
 
-
-
-2 - Run Postgres database docker container
+3 - Run Postgres database docker container
 ```
 pnpm docker: 
 ```
-3 - Create database and tables
+4 - Create database and tables
 ```
 pnpm db:push
 ```
 
-4 - Build apps and packages
+5 - Build apps and packages
 ```
 pnpm build
 ```
 
-5 - Run web app in dev mode
+6 - Run web app in dev mode
 ```
 pnpm dev
 ```
-6 - Navigate to 
+7 - Navigate to 
 ```
 http://localhost:3000/
 ```
-7 - To access openapi documents navigate to 
+8 - To access openapi documents navigate to 
 ```
 http://localhost:3000/api
 ```
