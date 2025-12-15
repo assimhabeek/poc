@@ -36,6 +36,9 @@ http://localhost:3000/api
 
 - [Turborepo](https://turborepo.com/) + [pnpm workspaces](https://pnpm.io/workspaces)
 - [Tanstack start](https://tanstack.com/start/latest) + [React](https://react.dev/)
+- [Tanstack Query](https://tanstack.com/query/latest) 
+- [Tanstack Form](https://tanstack.com/form/latest) 
+- [Shadcn](https://ui.shadcn.com/)
 - [Biomejs](https://biomejs.dev/)
 - [Drizzle ORM](https://orm.drizzle.team/)
 - [Zod](https://zod.dev/)
