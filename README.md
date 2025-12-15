@@ -1,3 +1,7 @@
+## Overview
+A simple CRUD application for managing planets, demonstrating create, read, update, and delete operations.
+
+
 ## Getting Started
 
 1 - Install dependencies
