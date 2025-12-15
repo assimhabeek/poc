@@ -3,7 +3,11 @@
 	"version": "0.0.0",
 	"private": true,
 	"license": "MIT",
+	"files": [
+		"dist/"
+	],
 	"scripts": {
+		"build": "npx tsc",
 		"format": "biome format --write",
 		"lint": "biome lint",
 		"check": "biome check"
@@ -18,9 +22,13 @@
 		"drizzle-orm": "1.0.0-beta.2-86f844e"
 	},
 	"exports": {
-		"./planet": "./src/planet.api.ts"
+		"./planet": {
+			"import": "./dist/planet.api.js",
+			"types": "./dist/planet.api.d.ts"
+		}
 	},
 	"devDependencies": {
-		"@types/pg": "^8.15.6"
+		"@types/pg": "^8.15.6",
+		"typescript": "^5.9.3"
 	}
 }

@@ -3,17 +3,15 @@
 	"private": true,
 	"scripts": {
 		"build": "turbo run build",
-		"web:dev": "turbo run web#dev",
-		"api:dev": "turbo run api#dev",
+		"dev": "turbo run dev",
 		"format": "biome format --write",
 		"lint": "biome lint",
 		"check": "biome check",
 
-		"cli:db:push": "turbo run cli#db:push",
-
-		"docker:up": "turbo run @codelab/database#docker:up",
-		"docker:down": "turbo run @codelab/database#docker:down",
-		"docker:ps": "turbo run @codelab/database#docker:ps"
+		"db:push": "turbo run web#db:push",
+		"docker:up": "turbo run web#docker:up",
+		"docker:down": "turbo run web#docker:down",
+		"docker:ps": "turbo run web#docker:ps"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.3.8",

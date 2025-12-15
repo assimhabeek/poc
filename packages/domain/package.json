@@ -1,7 +1,11 @@
 {
 	"name": "@codelab/domain",
 	"private": true,
+	"files": [
+		"dist/"
+	],
 	"scripts": {
+		"build": "npx tsc",
 		"format": "biome format --write",
 		"lint": "biome lint",
 		"check": "biome check"
@@ -9,13 +13,19 @@
 	"dependencies": {
 		"@codelab/database": "workspace:*",
 		"@codelab/typescript-config": "workspace:*",
-		"drizzle-zod": "1.0.0-beta.2-86f844e",
+		"drizzle-zod": "1.0.0-beta.2-86f844e"
+	},
+	"peerDependencies": {
 		"zod": "^4.1.13"
 	},
 	"exports": {
-		"./planet": "./src/planet.domain.ts"
+		"./planet": {
+			"import": "./dist/planet.domain.js",
+			"types": "./dist/planet.domain.d.ts"
+		}
 	},
 	"devDependencies": {
-		"@types/pg": "^8.15.6"
+		"@types/pg": "^8.15.6",
+		"typescript": "^5.9.3"
 	}
 }

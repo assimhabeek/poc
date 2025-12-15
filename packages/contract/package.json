@@ -3,7 +3,11 @@
 	"version": "0.0.0",
 	"private": true,
 	"license": "MIT",
+	"files": [
+		"dist/"
+	],
 	"scripts": {
+		"build": "npx tsc",
 		"format": "biome format --write",
 		"lint": "biome lint",
 		"check": "biome check"
@@ -14,9 +18,13 @@
 		"@orpc/contract": "1.12.2"
 	},
 	"exports": {
-		"./planet": "./src/planet.contract.ts"
+		"./planet": {
+			"import": "./dist/planet.contract.js",
+			"types": "./dist/planet.contract.d.ts"
+		}
 	},
 	"devDependencies": {
-		"@types/pg": "^8.15.6"
+		"@types/pg": "^8.15.6",
+		"typescript": "^5.9.3"
 	}
 }

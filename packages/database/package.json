@@ -2,7 +2,11 @@
 	"name": "@codelab/database",
 	"version": "1.0.0",
 	"description": "",
+	"files": [
+		"dist/"
+	],
 	"scripts": {
+		"build": "npx tsc",
 		"format": "biome format --write",
 		"lint": "biome lint",
 		"check": "biome check"
@@ -13,16 +17,24 @@
 	"dependencies": {
 		"@codelab/typescript-config": "workspace:*",
 		"drizzle-orm": "1.0.0-beta.2-86f844e",
-		"pg": "^8.16.3",
+		"pg": "^8.16.3"
+	},
+	"peerDependencies": {
 		"zod": "^4.1.13"
 	},
 	"devDependencies": {
-		"@types/node": "^24.10.1",
 		"@types/pg": "^8.15.6",
-		"tsx": "^4.21.0"
+		"typescript": "^5.9.3"
 	},
 	"exports": {
-		"./db": "./src/db.ts",
-		"./schema": "./src/schema.ts"
+		"./db": {
+			"import": "./dist/db.js",
+			"types": "./dist/db.d.ts"
+		},
+		"./schema": {
+			"import": "./dist/schema.js",
+			"default": "./dist/schema.js",
+			"types": "./dist/schema.d.ts"
+		}
 	}
 }

@@ -1,11 +1,7 @@
 {
-	"extends": "@codelab/typescript-config/base.json",
+	"extends": "@codelab/typescript-config/standard.json",
 	"compilerOptions": {
-		"strict": true,
 		"outDir": "dist",
-		"rootDir": "src",
-		"types": ["@types/node", "@types/pg"]
-	},
-	"include": ["src"],
-	"exclude": ["node_modules", "dist"]
+		"rootDir": "src"
+	}
 }

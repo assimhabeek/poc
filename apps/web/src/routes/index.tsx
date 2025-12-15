@@ -103,7 +103,7 @@ function App() {
 					</Button>
 				</div>
 
-				<DataTable
+				<DataTable<Planet, unknown>
 					columns={columns({
 						onDelete,
 						onUpdate,
