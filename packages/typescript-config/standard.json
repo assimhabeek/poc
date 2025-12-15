@@ -12,7 +12,7 @@
 		"noUnusedParameters": true,
 		"noFallthroughCasesInSwitch": true,
 		"noUncheckedSideEffectImports": true,
-		"emitDeclarationOnly": true,
+		"emitDeclarationOnly": false,
 		"declarationMap": true,
 		"isolatedModules": false
 	}

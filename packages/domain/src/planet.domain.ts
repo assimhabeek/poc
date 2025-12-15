@@ -3,7 +3,7 @@ import * as drizzleZod from "drizzle-zod";
 import z from "zod";
 
 const { createInsertSchema, createSelectSchema, createUpdateSchema } =
-	drizzleZod.createSchemaFactory({ zodInstance: z, coerce: {} });
+	drizzleZod.createSchemaFactory({ coerce: {} });
 
 const PlanetSchema = createSelectSchema(planets);
 

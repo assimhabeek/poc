@@ -10,16 +10,14 @@ pnpm install
 ```
 pnpm docker:up 
 ```
-4 - Create database and tables
-```
-pnpm db:push
-```
-
-5 - Build apps and packages
+4 - Build apps and packages
 ```
 pnpm build
 ```
-
+5 - Create database and tables
+```
+pnpm db:push
+```
 6 - Run web app in dev mode
 ```
 pnpm dev
