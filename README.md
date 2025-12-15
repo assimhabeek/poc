@@ -30,3 +30,14 @@ http://localhost:3000/
 ```
 http://localhost:3000/api
 ```
+
+
+## Tech stack
+
+- [Turborepo](https://turborepo.com/) + [pnpm workspaces](https://pnpm.io/workspaces)
+- [Tanstack start](https://tanstack.com/start/latest) + [React](https://react.dev/)
+- [Biomejs](https://biomejs.dev/)
+- [Drizzle ORM](https://orm.drizzle.team/)
+- [Zod](https://zod.dev/)
+- [oRPC](https://orpc.dev/)
+- [Postgres](https://www.postgresql.org/)
