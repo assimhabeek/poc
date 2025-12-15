@@ -1,7 +1,6 @@
 /** biome-ignore-all lint/correctness/noChildrenProp: this is required by tanstack forms */
 import { type PlanetCreateInput, PlanetSchemas } from "@codelab/domain/planet";
-import { useForm } from "@tanstack/react-form";
-import { Button } from "@/components/ui/button";
+import { Button } from "@codelab/shadcn/button";
 import {
 	Dialog,
 	DialogClose,
@@ -9,21 +8,22 @@ import {
 	DialogFooter,
 	DialogHeader,
 	DialogTitle,
-} from "@/components/ui/dialog";
+} from "@codelab/shadcn/dialog";
 import {
 	Field,
 	FieldDescription,
 	FieldError,
 	FieldGroup,
 	FieldLabel,
-} from "@/components/ui/field";
-import { Input } from "@/components/ui/input";
+} from "@codelab/shadcn/field";
+import { Input } from "@codelab/shadcn/input";
 import {
 	InputGroup,
 	InputGroupAddon,
 	InputGroupText,
 	InputGroupTextarea,
-} from "@/components/ui/input-group";
+} from "@codelab/shadcn/input-group";
+import { useForm } from "@tanstack/react-form";
 
 interface Props {
 	open: boolean;
@@ -43,10 +43,7 @@ export const CreatePlanetDialog = ({ onOpenChange, open, onAction }: Props) => {
 			onChange: formSchema,
 			onSubmit: formSchema,
 		},
-		onSubmit: ({ value }) => {
-			console.log(value);
-			onAction(value);
-		},
+		onSubmit: ({ value }) => onAction(value),
 	});
 
 	return (

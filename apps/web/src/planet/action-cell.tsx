@@ -1,10 +1,5 @@
-import type {
-	Planet,
-	PlanetDeleteInput,
-	PlanetUpdateInput,
-} from "@codelab/domain/planet";
-import { MoreHorizontal } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import type { Planet } from "@codelab/domain/planet";
+import { Button } from "@codelab/shadcn/button";
 import {
 	DropdownMenu,
 	DropdownMenuContent,
@@ -12,8 +7,8 @@ import {
 	DropdownMenuLabel,
 	DropdownMenuSeparator,
 	DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-
+} from "@codelab/shadcn/dropdown-menu";
+import { MoreHorizontal } from "lucide-react";
 export interface ActionCellProps {
 	planet: Planet;
 	onDelete: (input: Planet) => void;

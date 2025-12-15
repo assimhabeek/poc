@@ -1,0 +1,293 @@
+{
+	"name": "@codelab/shadcn",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"build": "vite build",
+		"format": "biome format",
+		"lint": "biome lint",
+		"check": "biome check"
+	},
+	"exports": {
+		"./accordion": {
+			"import": "./dist/accordion.js",
+			"types": "./dist/accordion.d.ts"
+		},
+		"./alert-dialog": {
+			"import": "./dist/alert-dialog.js",
+			"types": "./dist/alert-dialog.d.ts"
+		},
+		"./alert": {
+			"import": "./dist/alert.js",
+			"types": "./dist/alert.d.ts"
+		},
+		"./aspect-ratio": {
+			"import": "./dist/aspect-ratio.js",
+			"types": "./dist/aspect-ratio.d.ts"
+		},
+		"./avatar": {
+			"import": "./dist/avatar.js",
+			"types": "./dist/avatar.d.ts"
+		},
+		"./badge": {
+			"import": "./dist/badge.js",
+			"types": "./dist/badge.d.ts"
+		},
+		"./breadcrumb": {
+			"import": "./dist/breadcrumb.js",
+			"types": "./dist/breadcrumb.d.ts"
+		},
+		"./button-group": {
+			"import": "./dist/button-group.js",
+			"types": "./dist/button-group.d.ts"
+		},
+		"./button": {
+			"import": "./dist/button.js",
+			"types": "./dist/button.d.ts"
+		},
+		"./calender": {
+			"import": "./dist/calender.js",
+			"types": "./dist/calender.d.ts"
+		},
+		"./card": {
+			"import": "./dist/card.js",
+			"types": "./dist/card.d.ts"
+		},
+		"./carousel": {
+			"import": "./dist/carousel.js",
+			"types": "./dist/carousel.d.ts"
+		},
+		"./chart": {
+			"import": "./dist/chart.js",
+			"types": "./dist/chart.d.ts"
+		},
+		"./checkbox": {
+			"import": "./dist/checkbox.js",
+			"types": "./dist/checkbox.d.ts"
+		},
+		"./collapsible": {
+			"import": "./dist/collapsible.js",
+			"types": "./dist/collapsible.d.ts"
+		},
+		"./command": {
+			"import": "./dist/command.js",
+			"types": "./dist/command.d.ts"
+		},
+		"./context-menu": {
+			"import": "./dist/context-menu.js",
+			"types": "./dist/context-menu.d.ts"
+		},
+		"./dialog": {
+			"import": "./dist/dialog.js",
+			"types": "./dist/dialog.d.ts"
+		},
+		"./drawer": {
+			"import": "./dist/drawer.js",
+			"types": "./dist/drawer.d.ts"
+		},
+		"./dropdown-menu": {
+			"import": "./dist/dropdown-menu.js",
+			"types": "./dist/dropdown-menu.d.ts"
+		},
+		"./empty": {
+			"import": "./dist/empty.js",
+			"types": "./dist/empty.d.ts"
+		},
+		"./field": {
+			"import": "./dist/field.js",
+			"types": "./dist/field.d.ts"
+		},
+		"./form": {
+			"import": "./dist/form.js",
+			"types": "./dist/form.d.ts"
+		},
+		"./hover-card": {
+			"import": "./dist/hover-card.js",
+			"types": "./dist/hover-card.d.ts"
+		},
+		"./input-group": {
+			"import": "./dist/input-group.js",
+			"types": "./dist/input-group.d.ts"
+		},
+		"./input-otp": {
+			"import": "./dist/input-otp.js",
+			"types": "./dist/input-otp.d.ts"
+		},
+		"./input": {
+			"import": "./dist/input.js",
+			"types": "./dist/input.d.ts"
+		},
+		"./item": {
+			"import": "./dist/item.js",
+			"types": "./dist/item.d.ts"
+		},
+		"./kbd": {
+			"import": "./dist/kbd.js",
+			"types": "./dist/kbd.d.ts"
+		},
+		"./label": {
+			"import": "./dist/label.js",
+			"types": "./dist/label.d.ts"
+		},
+		"./menubar": {
+			"import": "./dist/menubar.js",
+			"types": "./dist/menubar.d.ts"
+		},
+		"./navigation-menu": {
+			"import": "./dist/navigation-menu.js",
+			"types": "./dist/navigation-menu.d.ts"
+		},
+		"./pagination": {
+			"import": "./dist/pagination.js",
+			"types": "./dist/pagination.d.ts"
+		},
+		"./popover": {
+			"import": "./dist/popover.js",
+			"types": "./dist/popover.d.ts"
+		},
+		"./progress": {
+			"import": "./dist/progress.js",
+			"types": "./dist/progress.d.ts"
+		},
+		"./radio-group": {
+			"import": "./dist/radio-group.js",
+			"types": "./dist/radio-group.d.ts"
+		},
+		"./resizable": {
+			"import": "./dist/resizable.js",
+			"types": "./dist/resizable.d.ts"
+		},
+		"./scroll-area": {
+			"import": "./dist/scroll-area.js",
+			"types": "./dist/scroll-area.d.ts"
+		},
+		"./select": {
+			"import": "./dist/select.js",
+			"types": "./dist/select.d.ts"
+		},
+		"./separator": {
+			"import": "./dist/separator.js",
+			"types": "./dist/separator.d.ts"
+		},
+		"./sheet": {
+			"import": "./dist/sheet.js",
+			"types": "./dist/sheet.d.ts"
+		},
+		"./sidebar": {
+			"import": "./dist/sidebar.js",
+			"types": "./dist/sidebar.d.ts"
+		},
+		"./skeleton": {
+			"import": "./dist/skeleton.js",
+			"types": "./dist/skeleton.d.ts"
+		},
+		"./slider": {
+			"import": "./dist/slider.js",
+			"types": "./dist/slider.d.ts"
+		},
+		"./sonner": {
+			"import": "./dist/sonner.js",
+			"types": "./dist/sonner.d.ts"
+		},
+		"./spinner": {
+			"import": "./dist/spinner.js",
+			"types": "./dist/spinner.d.ts"
+		},
+		"./switch": {
+			"import": "./dist/switch.js",
+			"types": "./dist/switch.d.ts"
+		},
+		"./table": {
+			"import": "./dist/table.js",
+			"types": "./dist/table.d.ts"
+		},
+		"./tabs": {
+			"import": "./dist/tabs.js",
+			"types": "./dist/tabs.d.ts"
+		},
+		"./textarea": {
+			"import": "./dist/textarea.js",
+			"types": "./dist/textarea.d.ts"
+		},
+		"./toggle-group": {
+			"import": "./dist/toggle-group.js",
+			"types": "./dist/toggle-group.d.ts"
+		},
+		"./toggle": {
+			"import": "./dist/toggle.js",
+			"types": "./dist/toggle.d.ts"
+		},
+		"./tooltip": {
+			"import": "./dist/tooltip.js",
+			"types": "./dist/tooltip.d.ts"
+		},
+		"./style.css": "./dist/style.css"
+	},
+	"peerDependencies": {
+		"react": "^19.2.0",
+		"react-dom": "^19.2.0"
+	},
+	"dependencies": {
+		"@codelab/typescript-config": "workspace:*",
+		"@hookform/resolvers": "^5.2.2",
+		"@radix-ui/react-accordion": "^1.2.12",
+		"@radix-ui/react-alert-dialog": "^1.1.15",
+		"@radix-ui/react-aspect-ratio": "^1.1.8",
+		"@radix-ui/react-avatar": "^1.1.11",
+		"@radix-ui/react-checkbox": "^1.3.3",
+		"@radix-ui/react-collapsible": "^1.1.12",
+		"@radix-ui/react-context-menu": "^2.2.16",
+		"@radix-ui/react-dialog": "^1.1.15",
+		"@radix-ui/react-dropdown-menu": "^2.1.16",
+		"@radix-ui/react-hover-card": "^1.1.15",
+		"@radix-ui/react-label": "^2.1.8",
+		"@radix-ui/react-menubar": "^1.1.16",
+		"@radix-ui/react-navigation-menu": "^1.2.14",
+		"@radix-ui/react-popover": "^1.1.15",
+		"@radix-ui/react-progress": "^1.1.8",
+		"@radix-ui/react-radio-group": "^1.3.8",
+		"@radix-ui/react-scroll-area": "^1.2.10",
+		"@radix-ui/react-select": "^2.2.6",
+		"@radix-ui/react-separator": "^1.1.8",
+		"@radix-ui/react-slider": "^1.3.6",
+		"@radix-ui/react-slot": "^1.2.4",
+		"@radix-ui/react-switch": "^1.2.6",
+		"@radix-ui/react-tabs": "^1.1.13",
+		"@radix-ui/react-toggle": "^1.1.10",
+		"@radix-ui/react-toggle-group": "^1.1.11",
+		"@radix-ui/react-tooltip": "^1.2.8",
+		"@tailwindcss/vite": "^4.0.6",
+		"class-variance-authority": "^0.7.1",
+		"clsx": "^2.1.1",
+		"cmdk": "^1.1.1",
+		"date-fns": "^4.1.0",
+		"embla-carousel-react": "^8.6.0",
+		"input-otp": "^1.4.2",
+		"lucide-react": "^0.561.0",
+		"next-themes": "^0.4.6",
+		"react-day-picker": "^9.12.0",
+		"react-hook-form": "^7.68.0",
+		"react-resizable-panels": "^3.0.6",
+		"recharts": "2.15.4",
+		"sonner": "^2.0.7",
+		"tailwind-merge": "^3.4.0",
+		"tailwindcss": "^4.0.6",
+		"vaul": "^1.1.2",
+		"zod": "^4.1.13"
+	},
+	"devDependencies": {
+		"typescript": "^5.9.2",
+		"@types/node": "^24.10.3",
+		"@types/react": "^19.2.5",
+		"@types/react-dom": "^19.2.3",
+		"@vitejs/plugin-react": "^5.1.1",
+		"globals": "^16.5.0",
+		"tw-animate-css": "^1.4.0",
+		"vite": "npm:rolldown-vite@7.2.5",
+		"vite-plugin-dts": "^4.5.4"
+	},
+	"overrides": {
+		"vite": "npm:rolldown-vite@7.2.5"
+	}
+}

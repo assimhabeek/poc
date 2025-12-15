@@ -7,6 +7,8 @@ import type {
 	PlanetUpdateInput,
 	PlanetUpdateOutput,
 } from "@codelab/domain/planet";
+import { Button } from "@codelab/shadcn/button";
+import { toast } from "@codelab/shadcn/sonner";
 import {
 	type DefaultError,
 	useMutation,
@@ -15,8 +17,6 @@ import {
 import { createFileRoute } from "@tanstack/react-router";
 import { PlusIcon } from "lucide-react";
 import { useCallback, useState } from "react";
-import { toast } from "sonner";
-import { Button } from "@/components/ui/button";
 import { orpc } from "@/integrations/orpc/client";
 import { columns } from "@/planet/columns";
 import { CreatePlanetDialog } from "@/planet/create-planet-dialog";

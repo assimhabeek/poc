@@ -1,7 +1,6 @@
 "use client";
 
 import type { Planet, PlanetDeleteInput } from "@codelab/domain/planet";
-import { type PropsWithChildren, useState } from "react";
 import {
 	AlertDialog,
 	AlertDialogAction,
@@ -11,7 +10,7 @@ import {
 	AlertDialogFooter,
 	AlertDialogHeader,
 	AlertDialogTitle,
-} from "@/components/ui/alert-dialog";
+} from "@codelab/shadcn/alert-dialog";
 
 interface Props {
 	planet: Planet;
